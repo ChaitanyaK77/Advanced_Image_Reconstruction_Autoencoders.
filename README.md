@@ -19,16 +19,25 @@ The model is trained using mean squared error loss and the Adam optimizer. We tr
 We conducted experiments with different numbers of epochs to analyze the model's performance. Here are the key findings:
 
 - **10 Epochs**: With minimal training, the reconstructed images show basic features but lack fine details and clarity.
-  [Alt text](Advanced_Image_Reconstruction_Autoencoders/10epoch.jpg!)
+  
+  ![apple](10epoch.jpg)
 
 - **100 Epochs**: After increasing the training duration, the reconstructed images exhibit improved clarity and better preservation of image details compared to 10 epochs.
+  
+  ![apple](100epoch.jpg)
 
 - **500 Epochs**: Further training enhances the reconstruction quality, resulting in sharper images with more accurate color representation and finer details.
-
+  
+  ![apple](500epoch.jpg)
+  
 - **1000 Epochs**: At this stage, the reconstructed images closely resemble the original inputs, with significantly improved clarity, color fidelity, and detail preservation.
-
+  
+  ![apple](1000epoch.jpg)
+  
 - **2000 Epochs**: With extended training, the model continues to refine its reconstruction capabilities. The images reconstructed at this stage are highly faithful to the originals, with minimal distortion and accurate representation of fine details.
-
+  
+  ![apple](2000epoch.jpg)
+  
 ### Conclusion
 
 The experiments demonstrate the effectiveness of convolutional autoencoders for image reconstruction tasks. Increasing the number of training epochs significantly improves reconstruction quality, leading to sharper, more faithful reconstructions. The findings highlight the importance of training duration in optimizing autoencoder performance for image processing applications.
