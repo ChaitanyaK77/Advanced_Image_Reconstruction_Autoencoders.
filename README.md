@@ -1,4 +1,4 @@
-# Advanced Image Reconstruction using Autoencoders
+# Advanced Image Reconstruction Autoencoders
 
 This project explores advanced image reconstruction techniques utilizing autoencoder neural networks. Autoencoders are a type of artificial neural network particularly useful for unsupervised learning tasks like dimensionality reduction and data compression.
 
