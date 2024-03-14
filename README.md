@@ -10,6 +10,24 @@ Autoencoders typically consist of an encoder and a decoder. The encoder compress
 
 The autoencoder model architecture comprises several convolutional layers for feature extraction and upsampling layers for image reconstruction.
 
+1. **Convolutional Layers**:
+   - The model starts with a convolutional layer with 64 filters and a kernel size of (3,3), followed by ReLU activation and same padding. This layer extracts features from the input image.
+   - Subsequent convolutional layers with decreasing filter sizes (32, 16) continue to extract more abstract features from the input.
+   - Each convolutional layer is followed by a max-pooling layer with a pooling size of (2,2) and same padding, which reduces the spatial dimensions of the feature maps.
+
+2. **Upsampling Layers**:
+   - After the feature extraction phase, the model uses upsampling layers to reconstruct the input image from the extracted features.
+   - The upsampling layers consist of convolutional layers with increasing filter sizes (16, 32, 64) to upsample the feature maps and gradually reconstruct the image.
+   - Each upsampling layer is followed by a 2x2 upsampling operation to increase the spatial dimensions of the feature maps.
+
+3. **Output Layer**:
+   - The final convolutional layer consists of 3 filters and a kernel size of (3,3) with ReLU activation and same padding. This layer reconstructs the RGB image from the feature maps obtained from the upsampling layers.
+
+4. **Compilation**:
+   - The model is compiled with the Adam optimizer and mean squared error loss function for training.
+
+
+
 ### Training
 
 The model is trained using mean squared error loss and the Adam optimizer. We train the model for various numbers of epochs to observe the impact of training duration on image reconstruction quality.
