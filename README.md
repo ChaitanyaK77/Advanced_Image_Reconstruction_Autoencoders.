@@ -18,6 +18,10 @@ The model is trained using mean squared error loss and the Adam optimizer. We tr
 
 We conducted experiments with different numbers of epochs to analyze the model's performance. Here are the key findings:
 
+**Original Image**:
+
+  ![apple](Apple.jpg)
+
 - **10 Epochs**: With minimal training, the reconstructed images show basic features but lack fine details and clarity.
   
   ![apple](10epoch.jpg)
